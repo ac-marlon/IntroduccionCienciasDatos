@@ -14,6 +14,7 @@ grayGirl=io.imread("imaTestGris.jpg")/255.0
 print("- Dimensiones de la imagen:")
 print(grayGirl.shape)
 plt.imshow(grayGirl,vmin=0,vmax=1)
+plt.title("Original")
 
 #Carga de imagenes a color:
 plt.figure()
@@ -25,12 +26,12 @@ print(colorGirl.shape)
 plt.imshow(colorGirl,vmin=0,vmax=1)
 
 
-plt.imshow(lena_rgb[:,:,0],vmin=0,vmax=1)
+plt.imshow(colorGirl[:,:,0],vmin=0,vmax=1)
 plt.title("Canal Rojo")
 plt.figure()
-plt.imshow(lena_rgb[:,:,1],vmin=0,vmax=1)
+plt.imshow(colorGirl[:,:,1],vmin=0,vmax=1)
 plt.title("Canal Verde")
 plt.figure()
-plt.imshow(lena_rgb[:,:,2],vmin=0,vmax=1)
+plt.imshow(colorGirl[:,:,2],vmin=0,vmax=1)
 plt.title("Canal Azul")
 
